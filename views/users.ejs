@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+   <h1>The users in DataBase</h1>
+    <table border="1px solid black">
+        <tr>
+        <th>user Id</th>
+        <th>username</th>
+        <th>email</th>
+
+        </tr>
+
+    <% for(let user of result){ %>
+        <tr>
+        <td><%= user.id %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        
+        </tr>
+
+        <% } %>
+    </table>
+  
+    
+</body>
+</html>
